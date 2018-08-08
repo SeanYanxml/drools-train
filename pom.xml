@@ -6,5 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>drools-quickstart</module>
+  	<module>drools-filesystem</module>
   </modules>
 </project>

@@ -1,0 +1,9 @@
+package com.yanxml.drools.files
+ 
+//import com.yanxml.drools.quickstart.Message;
+ 
+rule "Test KieFileSystem"
+    when
+    then
+        System.out.println( "hello, KieFileSystem" );
+end
