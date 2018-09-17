@@ -15,6 +15,9 @@ The project consist of some modules, including:
 ### Reference
 
 [1] Abel's demos : 
+
 [2] Drools + SpringBoot : https://gitee.com/yanxml/drools-springboot
+
 [3] Drools official demos : https://github.com/kiegroup/drools/tree/master/drools-examples
+
 [4] nut-drools (has been deleted): https://github.com/XiongZhijun/nut-drools.git
