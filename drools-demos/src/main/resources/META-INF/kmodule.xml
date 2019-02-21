@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+	<!-- demo helloworld -->
+	<kbase name="kbase-helloworld" packages="com.yanxml.drools.demos.helloworld">
+		<ksession name="ksession-helloworld"/>
+	</kbase>
+	
+</kmodule>

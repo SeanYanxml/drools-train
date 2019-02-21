@@ -7,5 +7,6 @@
   <modules>
   	<module>drools-quickstart</module>
   	<module>drools-filesystem</module>
+  	<module>drools-demos</module>
   </modules>
 </project>

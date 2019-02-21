@@ -1,7 +1,5 @@
 package com.yanxml.drools.filesystem;
 
-import javax.management.RuntimeErrorException;
-
 import org.junit.Test;
 import org.kie.api.KieServices;
 import org.kie.api.builder.KieBuilder;

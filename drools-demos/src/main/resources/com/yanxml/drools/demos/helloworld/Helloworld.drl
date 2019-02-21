@@ -1,0 +1,27 @@
+package com.yanxml.drools.demos
+
+import com.yanxml.drools.demos.pojo.Message;
+import com.yanxml.drools.demos.service.HelloWolrdMessageService;
+
+no-loop true
+
+rule "TransmitHelloworldRule"
+	when 
+		$m : Message( status == Message.STATUS_1, myMessage:message)
+	then
+		System.out.println("Hit Transmit HelloWorld Rule.");
+		$m.setMessage("STATUS_2");
+		$m.setStatus(Message.STATUS_2);
+//		update(m);
+end
+
+rule "InvokeHelloWorldRule"
+	when
+		$m : Message()
+		$msg : String()
+		$status : Integer()
+		$helloWolrdMessageService : HelloWolrdMessageService()
+	then
+		System.out.println("Hit Invoke HelloWorld Rule.");
+		$helloWolrdMessageService.changeMessageState($m,$msg,$status);
+end
