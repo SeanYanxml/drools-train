@@ -8,5 +8,6 @@
   	<module>drools-quickstart</module>
   	<module>drools-filesystem</module>
   	<module>drools-demos</module>
+  	<module>drools-springboot</module>
   </modules>
 </project>

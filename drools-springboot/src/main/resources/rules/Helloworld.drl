@@ -1,0 +1,26 @@
+package com.yanxml.drools.springboot
+
+import com.yanxml.drools.springboot.beans.pojo.Message;
+import com.yanxml.drools.springboot.service.MessageServiceService;
+
+no-loop true
+
+rule "TransmitHelloworldRule"
+	when 
+		$m : Message( status == Message.STATUS_1, myMessage:message)
+	then
+		System.out.println("Hit Transmit HelloWorld Rule.");
+		$m.setMessage("STATUS_2");
+		$m.setStatus(Message.STATUS_2);
+//		update($m);
+//		update(m);
+end
+
+rule "InvokeHelloWorldRule"
+	when
+		$m : Message()
+		$messageServiceService : MessageServiceService()
+	then
+		System.out.println("Hit Invoke HelloWorld Rule.");
+		$messageServiceService.insert($m);
+end
