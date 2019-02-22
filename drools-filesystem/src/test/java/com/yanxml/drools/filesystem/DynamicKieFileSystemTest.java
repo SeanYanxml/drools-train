@@ -39,10 +39,7 @@ public class DynamicKieFileSystemTest {
             
             kBase.newKieSession().fireAllRules();
             //放入缓存
-//            sceneRulesCache.put(scene, kBase);
-//            log.info("drools cache in memory is refreshed for scene {}, ruleFilePath:{}", scene, ruleFilePath);
         } catch (Exception e) {
-//        	throw new DroolsException(StringTools.format("根据规则文件 {} 刷新规则缓存失败", ruleFilePath),e);
         }
 	}
 	

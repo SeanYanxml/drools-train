@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.kie.api.runtime.KieSession;
 
 
-public class QuickStartTest extends DroolsBastTest{
+public class QuickStartTest extends DroolsBaseTest{
 	
 	@Test
 	public void test(){

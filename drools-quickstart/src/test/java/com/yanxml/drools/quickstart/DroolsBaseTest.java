@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 
-public abstract class DroolsBastTest {	
+public abstract class DroolsBaseTest {	
 	
 	protected KieServices kieServices;
 	protected KieContainer kieContainer;

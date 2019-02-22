@@ -8,7 +8,7 @@
 
 [3] [官方文档库](http://docs.jboss.org/drools/release/)
 
-[4] [官方JavaDoc] (https://docs.jboss.org/jbpm/v6.0.Beta2/javadocs/org/kie/api/runtime/KieContainer.html)
+[4] [官方 Java Doc](https://docs.jboss.org/jbpm/v6.0.Beta2/javadocs/org/kie/api/runtime/KieContainer.html)
 
 [5] [Github secbr/drools](https://github.com/secbr/drools)
 

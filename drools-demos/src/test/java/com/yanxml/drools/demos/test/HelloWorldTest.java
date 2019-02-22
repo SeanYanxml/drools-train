@@ -9,7 +9,7 @@ import com.yanxml.drools.demos.service.HelloWolrdMessageService;
 
 public class HelloWorldTest extends DroolsBaseTest {
 	
-//	@Test
+	@Test
 	public void testHelloWorld(){
 		KieSession kieSession = kieContainer.newKieSession("ksession-helloworld");
 		Message message = new Message();
@@ -20,7 +20,7 @@ public class HelloWorldTest extends DroolsBaseTest {
 		
 		// hit rule
 		kieSession.insert(message);
-		kieSession.fireAllRules();
+		kieSession.fireAllRules(new RuleNameStartsWithAgendaFilter("Transmit"));
 		
 		// 同步等待 - 等待rule执行完毕后 后面的语句才被执行。
 		System.out.println("Rule After - Message: "+message.getMessage()+" status:"+message.getStatus());
